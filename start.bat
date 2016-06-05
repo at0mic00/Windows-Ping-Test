@@ -13,7 +13,7 @@ echo Done! Fetching Task List...
 tasklist >> logs/tasklist.log
 echo Ping Test Successfull! Final Process: Netstat! This might take long time.
 netstat >> logs/netstat.log
-echo Ping test is done! make sure you contact at0mic with correct ID!
+echo Ping test is done! make sure to check logs folder for all your network log.
 cd logs
 ..\bin\7za.exe a ..\%rand% *.* > NUL
 echo Tests has been successfully tested and uploaded to the cloud! Your ID: %rand%. Please contact at0mic for more information..
