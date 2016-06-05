@@ -9,9 +9,11 @@ mkdir logs
 ipconfig /all >> logs/ipconfig.log
 echo Done! Pinging to google.com now!
 ping google.com -n 10 >> logs/ping.log
-echo Done! Final Step: Fetching Task List...
+echo Done! Fetching Task List...
 tasklist >> logs/tasklist.log
-echo Ping Test Successfull! Please wait until pingtest files will be uploaded...
+echo Ping Test Successfull! Final Process: Netstat! This might take long time.
+netstat >> logs/netstat.log
+echo Ping test is done! make sure you contact at0mic with correct ID!
 cd logs
 ..\bin\7za.exe a ..\%rand% *.* > NUL
 cd ..
